@@ -23,4 +23,5 @@ def post_detail(request, slug):
     # identified_post = Post.objects.get(slug=slug)
     return render(request, "blog/post-detail.html", {
         "post": identified_post,
+        "post_tags": identified_post.tags.all(),
     })
