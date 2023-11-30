@@ -6,6 +6,7 @@ urlpatterns = [
     path("", views.StartingPageView.as_view(), name="starting-page"),
     path("posts/", views.AllPostsView.as_view(), name="posts_page"),
     path("posts/<slug:slug>", views.PostDetailPageView.as_view(), name="post_detail_page"),
+    path("read-later/", views.ReadLaterView.as_view(), name="read_later_page"),
 
     # path("", views.starting_page, name="starting-page"),
     # path("posts/", views.posts, name="posts_page"),
